@@ -13,11 +13,11 @@
 
 <body>
   <div class="wrapper">
-    <p class="modal-show" id="modal-show">Click</p>
-    <div class="modal" id="modal" style="display: none;">
+    <p class="modal-show">Click</p>
+    <div class="modal" style="display: none;">
       <div class="modal-content">
         <div class="modal-text">MODAL WINDOW</div>
-        <button type="button" class="modal-close" id="modal-close">x</button>
+        <button type="button" class="modal-close">x</button>
       </div>
     </div>
   </div>
@@ -29,11 +29,11 @@
     // .click() クリック時のイベントを登録する。
     // .fadeIn() 一定時間かけてフェードインする。
     // .fadeOut() 一定時間かけてフェードアウトする。
-    $('#modal-show').click(function () {
-      $('#modal').fadeIn(20);
+    $('.modal-show').click(function () {
+      $('.modal').fadeIn(20);
     });
-    $('#modal-close').click(function () {
-      $('#modal').fadeOut(500);
+    $('.modal-close').click(function () {
+      $('.modal').fadeOut(500);
     })
   </script>
 </body>
