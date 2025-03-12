@@ -103,6 +103,7 @@
     // eachには引数を二つ持たせることができ、第一引数はDOM要素のインデックス番号、第二引数ではDOM要素自体が取得できます
     $('.select').change(function () {
       var language = $(this).val();
+
       $('li').each(function (index, element) {
         if (language === 'all') {
           $(element).show();
